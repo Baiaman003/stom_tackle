@@ -106,10 +106,10 @@ function NavBar() {
             <Link href='/cart'>
               <a className={'nav-link' + isActive('/cart')}>
                 <i className='fas fa-shopping-cart position-relative' aria-hidden='true'>
-                  <img
+                  {/* <img
                     src='https://res.cloudinary.com/baygroup/image/upload/v1623606032/nextjs_media/cart_icon.svg'
                     alt=''
-                  />
+                  /> */}
                   <span
                     className='position-absolute'
                     style={{
