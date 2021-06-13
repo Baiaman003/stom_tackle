@@ -214,16 +214,6 @@ const Profile = () => {
                         <i className='fas fa-times text-danger'></i>
                       )}
                     </td>
-                    <td className='p-2'>
-                      <i
-                        className='far fa-trash-alt text-danger'
-                        onClick={() =>
-                          dispatch({
-                            type: 'ADD_MODAL',
-                            payload: [{ data: cart, id: order._id, type: 'ADD_CART' }],
-                          })
-                        }></i>
-                    </td>
                   </tr>
                 ))}
               </tbody>
