@@ -42,7 +42,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
             <h2 className='text-break'>Заказ {order._id}</h2>
 
             <div className='mt-4 text-secondary'>
-              <h3>Оформление</h3>
+              <h3 className='mt-3'>Оформление</h3>
               <p>Имя: {order.user.name}</p>
               <p>еmail: {order.user.email}</p>
               <p>адрес: {order.address}</p>
@@ -52,7 +52,8 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
                 className={`alert ${order.delivered ? 'alert-success' : 'alert-danger'}
                         d-flex justify-content-between align-items-center`}
                 role='alert'>
-                {order.delivered ? `Deliverd on ${order.updatedAt}` : 'Не доставлен'}
+                <h3 className='mt-3'>Доставка</h3>
+                {order.delivered ? `Доставлено в ${order.updatedAt}` : 'Не доставлен'}
                 {auth.user.role === 'admin' && !order.delivered && (
                   <button
                     className='btn btn-dark text-uppercase'
@@ -62,7 +63,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
                 )}
               </div>
 
-              <h3>Оплата</h3>
+              <h3 className='mt-3'>Оплата</h3>
               {order.method && (
                 <h6>
                   Метод: <em>{order.method}</em>
@@ -83,7 +84,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
               </div>
 
               <div>
-                <h3>O заказe</h3>
+                <h3 className='mt-3'>O заказe</h3>
                 {order.cart.map((item) => (
                   <div
                     className='row border-bottom mx-0 p-2 justify-content-betwenn
