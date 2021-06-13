@@ -39,7 +39,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
       {orderDetail.map((order) => (
         <div key={order._id} style={{ margin: '20px auto' }} className='row justify-content-around'>
           <div className='text-uppercase my-3' style={{ maxWidth: '600px' }}>
-            <h2 className='text-break'>Order {order._id}</h2>
+            <h2 className='text-break'>Заказ {order._id}</h2>
 
             <div className='mt-4 text-secondary'>
               <h3>Оформление</h3>
@@ -62,16 +62,16 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
                 )}
               </div>
 
-              <h3>Payment</h3>
+              <h3>Оплата</h3>
               {order.method && (
                 <h6>
-                  Method: <em>{order.method}</em>
+                  Метод: <em>{order.method}</em>
                 </h6>
               )}
 
               {order.paymentId && (
                 <p>
-                  PaymentId: <em>{order.paymentId}</em>
+                  Id оплаты: <em>{order.paymentId}</em>
                 </p>
               )}
 
@@ -83,7 +83,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
               </div>
 
               <div>
-                <h3>Order Items</h3>
+                <h3>O заказe</h3>
                 {order.cart.map((item) => (
                   <div
                     className='row border-bottom mx-0 p-2 justify-content-betwenn
