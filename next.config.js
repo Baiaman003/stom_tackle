@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    BASE_URL: 'http://localhost:3000',
+    BASE_URL: 'https://stom-tackle.vercel.app/',
     MONGODB_URL:
       'mongodb+srv://Baiaman:384195asus@cluster0.fd9nx.mongodb.net/nextjs_ecommerce?retryWrites=true&w=majority',
     ACCESS_TOKEN_SECRET: "yFE`3PYQA(w->RzMlH99AZBjTY5'(Vk=4K)=8M<945^G+{{a6",
