@@ -198,7 +198,6 @@ const Profile = () => {
                         <a>{order._id}</a>
                       </Link>
                     </td>
-                    <td className='p-2'>{order.name}</td>
                     <td className='p-2'>{new Date(order.createdAt).toLocaleDateString()}</td>
                     <td className='p-2'>{order.total} сом</td>
                     <td className='p-2'>
@@ -214,6 +213,16 @@ const Profile = () => {
                       ) : (
                         <i className='fas fa-times text-danger'></i>
                       )}
+                    </td>
+                    <td className='p-2'>
+                      <i
+                        className='far fa-trash-alt text-danger'
+                        onClick={() =>
+                          dispatch({
+                            type: 'ADD_MODAL',
+                            payload: [{ data: cart, id: order._id, type: 'ADD_CART' }],
+                          })
+                        }></i>
                     </td>
                   </tr>
                 ))}
