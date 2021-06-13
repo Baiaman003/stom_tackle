@@ -43,7 +43,7 @@ const Filter = ({ state }) => {
         </select>
       </div>
 
-      <form autoComplete='off' className='mt-2 col-6 px-0'>
+      <form autoComplete='off' className='mt-2 col-lg-6 col-xl-8 px-0'>
         <input
           placeholder='Поиск'
           type='text'
