@@ -48,11 +48,11 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
               <p>адрес: {order.address}</p>
               <p>телефон: {order.mobile}</p>
 
+              <h3 className='mt-3'>Доставка</h3>
               <div
                 className={`alert ${order.delivered ? 'alert-success' : 'alert-danger'}
                         d-flex justify-content-between align-items-center`}
                 role='alert'>
-                <h3 className='mt-3'>Доставка</h3>
                 {order.delivered ? `Доставлено в ${order.updatedAt}` : 'Не доставлен'}
                 {auth.user.role === 'admin' && !order.delivered && (
                   <button
