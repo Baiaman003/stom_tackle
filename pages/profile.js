@@ -182,7 +182,6 @@ const Profile = () => {
               <thead className='bg-light font-weight-bold'>
                 <tr>
                   <td className='p-2'>id</td>
-                  <td className='p-2'>Имя</td>
                   <td className='p-2'>Дата</td>
                   <td className='p-2'>Итого</td>
                   <td className='p-2'>ДОСТАВЛЕНО</td>
