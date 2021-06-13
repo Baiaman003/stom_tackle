@@ -58,7 +58,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
                   <button
                     className='btn btn-dark text-uppercase'
                     onClick={() => handleDelivered(order)}>
-                    Отметить как доставленное
+                    как доставленное
                   </button>
                 )}
               </div>
@@ -80,7 +80,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
                 className={`alert ${order.paid ? 'alert-success' : 'alert-danger'}
                         d-flex justify-content-between align-items-center`}
                 role='alert'>
-                {order.paid ? `Paid on ${order.dateOfPayment}` : 'НЕ ОПЛАЧЕНО'}
+                {order.paid ? `Оплачено ${order.dateOfPayment}` : 'НЕ ОПЛАЧЕНО'}
               </div>
 
               <div>

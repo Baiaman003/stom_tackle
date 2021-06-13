@@ -182,9 +182,10 @@ const Profile = () => {
               <thead className='bg-light font-weight-bold'>
                 <tr>
                   <td className='p-2'>id</td>
+                  <td className='p-2'>Имя</td>
                   <td className='p-2'>Дата</td>
                   <td className='p-2'>Итого</td>
-                  <td className='p-2'>Доставлено</td>
+                  <td className='p-2'>ДОСТАВЛЕНО</td>
                   <td className='p-2'>Оплачено</td>
                 </tr>
               </thead>
@@ -197,6 +198,7 @@ const Profile = () => {
                         <a>{order._id}</a>
                       </Link>
                     </td>
+                    <td className='p-2'>{order.name}</td>
                     <td className='p-2'>{new Date(order.createdAt).toLocaleDateString()}</td>
                     <td className='p-2'>{order.total} сом</td>
                     <td className='p-2'>
