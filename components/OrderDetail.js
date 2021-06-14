@@ -118,6 +118,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
               <PaypalBtn order={order} />
             </div>
           )}
+          <button className='outline-denger'>Удалить заказ</button>
         </div>
       ))}
     </>
