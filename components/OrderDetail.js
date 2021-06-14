@@ -118,7 +118,23 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
               <PaypalBtn order={order} />
             </div>
           )}
-          <button className='outline-denger'>Удалить заказ</button>
+          <button
+            className='btn btn-danger'
+            onClick={() =>
+              dispatch({
+                type: 'ADD_MODAL',
+                payload: [
+                  {
+                    data: '',
+                    id: order._id,
+                    title: order.user,
+                    type: 'DELETE_PRODUCT',
+                  },
+                ],
+              })
+            }>
+            Удалить заказ
+          </button>
         </div>
       ))}
     </>
