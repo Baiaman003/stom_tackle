@@ -118,25 +118,6 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
               <PaypalBtn order={order} />
             </div>
           )}
-          <button
-            className='btn btn-danger'
-            data-toggle='modal'
-            data-target='#exampleModal'
-            onClick={() =>
-              dispatch({
-                type: 'ADD_MODAL',
-                payload: [
-                  {
-                    data: '',
-                    id: order._id,
-                    title: order.user,
-                    type: 'DELETE_ORDER',
-                  },
-                ],
-              })
-            }>
-            Удалить заказ
-          </button>
         </div>
       ))}
     </>

@@ -37,15 +37,6 @@ const Modal = () => {
     })
   }
 
-  const deleteOrder = (item) => {
-    dispatch({ type: 'NOTIFY', payload: { loading: true } })
-    deleteData(`order/${item.id}`, auth.token).then((res) => {
-      if (res.err) return dispatch({ type: 'NOTIFY', payload: { error: res.err } })
-      dispatch({ type: 'NOTIFY', payload: { success: res.msg } })
-      return router.push('/')
-    })
-  }
-
   const handleSubmit = () => {
     if (modal.length !== 0) {
       for (const item of modal) {
@@ -58,8 +49,6 @@ const Modal = () => {
         if (item.type === 'ADD_CATEGORIES') deleteCategories(item)
 
         if (item.type === 'DELETE_PRODUCT') deleteProduct(item)
-
-        if (item.type === 'DELETE_ORDER') deleteProduct(item)
 
         dispatch({ type: 'ADD_MODAL', payload: [] })
       }
