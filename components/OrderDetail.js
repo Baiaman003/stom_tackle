@@ -120,6 +120,8 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
           )}
           <button
             className='btn btn-danger'
+            data-toggle='modal'
+            data-target='#exampleModal'
             onClick={() =>
               dispatch({
                 type: 'ADD_MODAL',
