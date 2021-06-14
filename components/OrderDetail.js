@@ -130,7 +130,7 @@ const OrderDetail = ({ orderDetail, state, dispatch }) => {
                     data: '',
                     id: order._id,
                     title: order.user,
-                    type: 'DELETE_PRODUCT',
+                    type: 'DELETE_ORDER',
                   },
                 ],
               })
