@@ -82,7 +82,7 @@ function NavBar() {
   return (
     <nav
       className='navbar navbar-expand-lg navbar-light bg-light'
-      style={{ backgroundClip: 'yellow' }}>
+      style={{ backgroundColor: 'yellow' }}>
       <Link href='/'>
         <a className='navbar-brand'>
           <img
