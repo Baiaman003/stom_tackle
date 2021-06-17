@@ -67,7 +67,7 @@ const Modal = () => {
         <div className='modal-content'>
           <div className='modal-header'>
             <h5 className='modal-title text-capitalize' id='exampleModalLabel'>
-              {modal.length !== 0 && modal[0].title}
+              {modal.length !== 0 && modal[0].title}|
             </h5>
             <button type='button' className='close' data-dismiss='modal' aria-label='Close'>
               <span aria-hidden='true'>&times;</span>

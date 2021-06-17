@@ -48,7 +48,7 @@ const Filter = ({ state }) => {
           placeholder='Поиск'
           type='text'
           className='form-control '
-          list='title_product'
+          // list='title_product'
           value={search.toLowerCase()}
           onChange={(e) => setSearch(e.target.value)}
         />
