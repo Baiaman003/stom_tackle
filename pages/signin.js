@@ -56,6 +56,8 @@ const Signin = () => {
         <title>Войти</title>
       </Head>
 
+      {/* code */}
+
       <form className='mx-auto my-4' style={{ maxWidth: '500px' }} onSubmit={handleSubmit}>
         <div className='form-group'>
           <label htmlFor='exampleInputEmail1'>Электронный адрес</label>
