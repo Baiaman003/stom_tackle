@@ -77,12 +77,9 @@ function NavBar() {
         </div>
       </li>
     )
-  }
-
+  } //yellow !important-----------------------------------------------------------yellow !important---------------------------------------yellow !important-------------------------------------------------------yellow !important
   return (
-    <nav
-      className='navbar navbar-expand-lg navbar-light bg-light'
-      style={{ backgroundColor: 'yellow !important' }}>
+    <nav className='navbar navbar-expand-lg navbar-light bg-light' style={{ backgroundColor: '' }}>
       <Link href='/'>
         <a className='navbar-brand'>
           <img
